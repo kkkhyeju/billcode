@@ -33,17 +33,15 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pic = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.btn_Preview = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pic = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtQRCode
@@ -51,7 +49,6 @@
             this.txtQRCode.Location = new System.Drawing.Point(24, 218);
             this.txtQRCode.Multiline = true;
             this.txtQRCode.Name = "txtQRCode";
-            this.txtQRCode.ReadOnly = true;
             this.txtQRCode.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtQRCode.Size = new System.Drawing.Size(294, 72);
             this.txtQRCode.TabIndex = 1;
@@ -84,16 +81,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
-            // 
-            // pic
-            // 
-            this.pic.BackColor = System.Drawing.SystemColors.Window;
-            this.pic.Location = new System.Drawing.Point(24, 325);
-            this.pic.Name = "pic";
-            this.pic.Size = new System.Drawing.Size(294, 274);
-            this.pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pic.TabIndex = 7;
-            this.pic.TabStop = false;
             // 
             // button3
             // 
@@ -140,14 +127,14 @@
             this.btn_Preview.UseVisualStyleBackColor = true;
             this.btn_Preview.Click += new System.EventHandler(this.btn_Preview_Click);
             // 
-            // pictureBox2
+            // pic
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Location = new System.Drawing.Point(24, 323);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(294, 275);
-            this.pictureBox2.TabIndex = 11;
-            this.pictureBox2.TabStop = false;
+            this.pic.BackColor = System.Drawing.SystemColors.Window;
+            this.pic.Location = new System.Drawing.Point(24, 325);
+            this.pic.Name = "pic";
+            this.pic.Size = new System.Drawing.Size(190, 190);
+            this.pic.TabIndex = 7;
+            this.pic.TabStop = false;
             // 
             // Form1
             // 
@@ -163,14 +150,12 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtQRCode);
-            this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "♡♡♡BillCode♡♡♡";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,14 +166,13 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pic;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Windows.Forms.Button btn_Preview;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pic;
     }
 }
 
